@@ -8,7 +8,7 @@
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 
-// Result COMPLETE 2/2/22
+// TODO: Solution is too slow.
 var rotate = function (nums, k) {
     nums.unshift(nums.splice(nums.length - k%nums.length,nums.length))
 };

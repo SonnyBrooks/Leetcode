@@ -8,8 +8,7 @@
  * @return {number[]}
  */
 
-//RESULT Complete 2/2/22
- var sortedSquares = function(nums) {
+var sortedSquares = function(nums) {
     return nums.map(num => num ** 2).sort((a,b) => a-b);
 };
 
