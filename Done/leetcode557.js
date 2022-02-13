@@ -8,7 +8,7 @@
  */
  var reverseWords = function(s) {
     let sArr = s.split(' ');
-    for(var i = 0; i < sArr.length; i++) {
+    for(let i = 0; i < sArr.length; i++) {
         sArr[i] = sArr[i].split('').reverse().join('');
     }
 

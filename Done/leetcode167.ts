@@ -8,12 +8,10 @@ The tests are generated such that there is exactly one solution. You may not use
 Your solution must use only constant extra space.
  */
 
-// Really slow
-
 function twoSum(numbers: number[], target: number): number[] | void {
-    for(var i = 0; i < numbers.length; i++) {
+    for(let i = 0; i < numbers.length; i++) {
         if(numbers[i] + numbers[numbers.length - 1] < target) continue; //Skip all numbers smaller than your target
-        for(var k = i + 1; k < numbers.length; k++) {
+        for(let k = i + 1; k < numbers.length; k++) {
             if(numbers[i] + numbers[k] === target) return [i + 1, k + 1];
             if(numbers[i] + numbers[k] > target) break;
         }

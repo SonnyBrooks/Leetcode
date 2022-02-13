@@ -11,7 +11,7 @@
  var maximumWealth = function(accounts) {
     let max = 0;
 
-    for(var i = 0; i < accounts.length; i++) {
+    for(let i = 0; i < accounts.length; i++) {
         let sum = accounts[i].reduce((num, sum) => sum += num)
         max = sum > max ? sum : max;
     }

@@ -29,7 +29,7 @@ var removeNthFromEnd = function (head, n) {
     var trailNode = dummyHead;
     var currentNode = dummyHead;
 
-    for(var i = 1; i <= n+1; i++) {
+    for(let i = 1; i <= n+1; i++) {
         currentNode = currentNode.next
     }
 
